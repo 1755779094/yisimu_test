@@ -5,3 +5,8 @@
 i 进入编辑模式 编辑完成 按esc 退出编辑模式 输入 :wq 保存当前编辑
 删除工作区就是本地文件 rm filename 
 删除版本库文件 git rm filename 然后 git commit -m "remove file"
+
+git 创建分支 切换分支
+git branch branchName   切换 git checkout branchName
+
+两条命令合并为一条  git branch -b branchName 创建分支并切换到新分支
