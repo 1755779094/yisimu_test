@@ -10,3 +10,7 @@ git 创建分支 切换分支
 git branch branchName   切换 git checkout branchName
 
 两条命令合并为一条  git branch -b branchName 创建分支并切换到新分支
+ 
+合并某一个分支的修改到当前分支 merge branch branchNmae(目标分支名称)
+
+解决冲突
