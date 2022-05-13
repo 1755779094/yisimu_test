@@ -13,4 +13,12 @@ git branch branchName   切换 git checkout branchName
  
 合并某一个分支的修改到当前分支 merge branch branchNmae(目标分支名称)
 
-解决冲突
+解决冲突 conflict fixed
+本地先解决冲突 在提交
+
+删除无用分支 git branch -d branchName
+
+如果当前任务已进行中，暂时不能提交，突然接到紧急 bug修改任务，则可隐匿当前进度，创建新bug分支 并修改bug提交。再切回之前任务分支，并解除隐匿任务。
+
+git status | git stash |git branch -b bugFeature |修改bug git add file |git commit -m "提交bug" |切换回之前任务分支 git checkout otherBranchName | git status | git stash list 查看当前隐匿任务|git stash apply 恢复之前工作任务（h恢复之后 stash内容并未删除，用git stash drop 删除） |或者用git stash pop (恢复的同事把stash内容也删除了)
+i
